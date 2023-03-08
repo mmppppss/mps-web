@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: Monospace;
+  font-size: 16px;
+}
+
+/* Estilos para el tema Gruvbox */
+.gruvbox {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+.gruvbox a {
+  color: #d79921;
+}
+
+.gruvbox input,
+.gruvbox textarea {
+  background-color: #3c3836;
+  color: #ebdbb2;
+  border: 1px solid #d79921;
+}
+
+.gruvbox button {
+  background-color: #d79921;
+  color: #282828;
+  border: 1px solid #d79921;
+}
+
+/* Estilos para el tema Dracula */
+.dracula {
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+.dracula a {
+  color: #ff79c6;
+}
+
+.dracula input,
+.dracula textarea {
+  background-color: #44475a;
+  color: #f8f8f2;
+  border: 1px solid #ff79c6;
+}
+
+.dracula button {
+  background-color: #ff79c6;
+  color: #282a36;
+  border: 1px solid #ff79c6;
+}
+
+/* Estilos para el tema Monokay */
+.monokay {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+
+.monokay a {
+  color: #61afef;
+}
+
+.monokay input,
+.monokay textarea {
+  background-color: #3b4252;
+  color: #abb2bf;
+  border: 1px solid #61afef;
+}
+
+.monokay button {
+  background-color: #61afef;
+  color: #282c34;
+  border: 1px solid #61afef;
+}
+
+/* Estilos para el tema Solarised Dark */
+.solarised-dark {
+  background-color: #002b36;
+  color: #839496;
+}
+
+.solarised-dark a {
+  color: #268bd2;
+}
+
+.solarised-dark input,
+.solarised-dark textarea {
+  background-color: #073642;
+  color: #839496;
+  border: 1px solid #268bd2;
+}
+
+.solarised-dark button {
+  background-color: #268bd2;
+  color: #002b36;
+  border: 1px solid #268bd2;
+}
+
+.void {
+  display: none;
+  opacity: 0;
+  left: 75%;
+  position: absolute;
+  background: red;
+  width: 25%;
+  height: 100%;
+}
+.panel {
+  width: 75%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background: #282828;
+  border-right: solid 2px;
+}
+.panelOpen {
+  display: block;
+}
+.menu {
+  height: 65px;
+  display: flex;
+  border-bottom: solid 2px;
+}
+.menu img {
+  position: absolute;
+}
+.menu h1 {
+  font-weight: 2;
+  margin: auto;
+}
+.menu span {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 3em;
+  font-weight: 6;
+}
+/* stile nerdtree */
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tree {
+  /*  font-family: sans-serif;*/
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 1.5;
+  /* color: #444;*/
+}
+
+.tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tree ul ul {
+  margin-left: 1em;
+  position: relative;
+}
+
+.tree ul ul ul {
+  margin-left: .5em;
+}
+
+.tree ul ul:before {
+  content: '';
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #ccc;
+}
+
+.tree li {
+  margin: 0;
+  padding: 0 1em;
+  line-height: 2em;
+  /* color: #369;*/
+  font-weight: bold;
+  position: relative;
+}
+
+.tree ul li:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 0;
+  border-top: 1px solid #ccc;
+  margin-top: -1px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+
+.tree ul li:last-child:before {
+  /*background: #fff;*/
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+
+.tree li i {
+  margin-right: 5px;
+}
+
+.tree li a {
+  text-decoration: none;
+  color: #369;
+}
+
+.tree li button,
+.tree li button:active,
+.tree li button:focus {
+  text-decoration: none;
+  /*  color: #369;*/
+  border: none;
+  background: transparent;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  outline: 0;
+}
+
+
+
+/*   sugest  */
+.sugest {
+  width: 75%;
+  height: 240px;
+  background-color: red;
+  margin: 50px auto 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.sugest img {
+  width: 85%;
+  height: 210px;
+  object-fit: cover;
+}
+.sugest h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sugest p {
+  font-size: 0.8rem;
+}
